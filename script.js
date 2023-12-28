@@ -8,7 +8,8 @@ const clock = () => {
 
 
     if (diff < 0){
-        console.log("Done")
+        
+        console.log("Happy New Year")
         clearInterval(clearInt);
         return;
         
@@ -24,10 +25,8 @@ const clock = () => {
 }
 
 
-clock()
-
-
-const clearInt = setInterval(() => {
+let clearInt = setInterval(() => {
     clock()
 }, 1000);
  
+clock()
